@@ -1,5 +1,12 @@
 # Python I2C Userspace Drivers in Linux for Dummies
 
+This document/repository is intended to act as a skeleton & lesson for creating simple userspace I2C device drivers in Linux. 
+
+The tutorial was created on a [BeaglePlay Development Board](https://www.ti.com/tool/BEAGL-PLAY-SBC). 
+The sensor used is a Texas Instruments [OPT4048](https://www.ti.com/product/OPT4048) as found on the [Color 17 Click Board](https://www.mikroe.com/color-17-click)
+
+While some of the information below will be specific to the OPT4048, much of it can be generalized and shows the through process behind reading a datasheet to understand how a device functions and then taking this infromation and trnaslating it into useulf computer code that lets us actually interface with the device.
+
 ## Before we do any code...
 It's important we understand how the device we want to talk to is laid out.
 
