@@ -138,9 +138,11 @@ Ok cool and all, but how do we know if what we are reading is correct?
 -- TODO - ADD SECTION ON Calculating CRC and veryfing answers...
 
 
-#Let's now get some meaningful data out
+# Let's now get some meaningful data out
 
-Let's look at page 17 on calculating Lux
+The [datasheet](https://www.ti.com/lit/ds/symlink/opt4048.pdf) very helpfully has some formulas we can use to derive different measuements from the registers of the OPT4048 and it's raw ADC readings on Page 17. 
+
+![Lux Measurement Formula](Images/luxmeasurement.png)
 
 ```python
     #EXPONENT[4] RESULT_MSB[12] RESULT_LSB [8]  COUNTER [4] CRC [4]
