@@ -67,7 +67,11 @@ import smbus #Required for I2C communication
 ### Now let's define our constants
 
 We do this by looking at the register map in the datasheet and writing their start and end adresses
-Note there are many ways of doing this, I'm chosing the simplest way
+Note there are many ways of doing this, I'm chosing the simplest way which is just listing out the different fields by address in the device memory map.
+
+We can worry about extracting specific fields later.
+
+![Device Constants](Images/constants.png)
 
 ### Now let's define some default sane config values
 
