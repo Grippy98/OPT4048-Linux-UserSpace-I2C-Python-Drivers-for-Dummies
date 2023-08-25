@@ -22,9 +22,9 @@ touch opt4048.py
 i2cdetect -r 3 
 ```
 
-Let's read the device ID to confirm we are looking at the right device
+![Resulting device at it's default 0x44 address](Images/i2cdetect.png)
 
-#insert page 32 of datasheet
+Let's read the device ID to confirm we are looking at the right device
 
 ![Datasheet Page 32 Showing Device ID Register](Images/deviceID.png)
 
@@ -60,6 +60,11 @@ Note there are many ways of doing this, I'm chosing the simplest way
 
 This is where some knowledge of binary, hex and a table comes in as we will set each bit one by one and then send the correspnding data in hex over I2C to configure the device.
 
+![Configuration Values in Datasheet](Images/datasheetRegValues.png)
+
+Which Translates to...
+
+![Configuration Values in Code Format](Images/configDataCode.png)
 
 We'll run a sanity check program:
 
