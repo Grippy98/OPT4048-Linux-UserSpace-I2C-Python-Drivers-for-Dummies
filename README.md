@@ -58,9 +58,11 @@ We'll call it test.py
 
 First, let's import libraries
 
+```python
 import os  #Useful for any OS type tasks, may be unused
 import time #Required for creating delays may be unused
 import smbus #Required for I2C communication
+```
 
 ### Now let's define our constants
 
