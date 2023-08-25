@@ -1,5 +1,14 @@
 # Python I2C Userspace Drivers in Linux for Dummies
 
+## Before we do any code...
+It's important we understand how the device we want to talk to is laid out
+We know it talks I2C, which is great, but how are the bits inside organized?
+This is where the Datasheet, and more importantly, the Datasheet Register Map Come in
+
+Link to the OPT4048 [Datasheet](https://www.ti.com/lit/ds/symlink/opt4048.pdf). 
+
+![The Device Register Map](Images/registerMap.png)
+
 ## First - Let's make sure our system is  up to date
 
 ```bash
